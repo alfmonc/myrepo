@@ -1,3 +1,0 @@
-Este es un arechivo nuevo creado por mi para probar el git.
-Este es el segundo cambio que le hacemos.
-Este es el tercer cambio que hacemos.
