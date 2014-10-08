@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+<title>Using one function for two objects with key word this and a button with onclick.</title>
+
+<script>
+
+
+
+<!-- creando la funcion creadora de objetos.
+
+function person(personName)  {
+	this.name = personName;
+	this.info = "This person is called " + this.name;
+	this.showInfo = function() {           <!-- asignando showInfo como funcion.
+		alert(this.info);}
+	}
+	
+	
+// creando objetos
+
+var sofia = new person("Sofia");
+var eva = new person("Eva");
+
+
+
+// agrega mas cosas a los objetos usando creacion de funcion anonima.
+
+function agrega() {
+
+	person.prototype.diHola = function() {
+	alert(this.name + " dice hola a todos.\nFuncion agregada a esta persona.");
+	}
+
+}
+
+
+</script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+<button onclick = "sofia.showInfo()">Muestra a Sofia</button>
+
+<input type = "button" value = "Muestra a Eva" onclick = "eva.showInfo()" />
+
+<button onclick = "agrega()">Agrega funcion para que sirvan los dos botones siguientes.</button>
+
+<button onclick = "sofia.diHola()">Sofia saluda.</button>
+
+<button onclick = "eva.diHola()">Eva saluda.</button>
+
+
+<script>
+	prompt("Escribe algo.");
+</script>
+
+
+
+</body>
+
+
+
+
+
+</html>
